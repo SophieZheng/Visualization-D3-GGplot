@@ -1,0 +1,55 @@
+<style>
+
+.d3body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width:960px;
+  height:600px;
+  position:fixed;
+/*  margin-left:-480px;  half of width 
+  margin-top:-150px; */ /* half of height */
+  top:50%;
+  left:50%;
+}
+
+.d3h2{
+  position:fixed;
+/*  top: 20%;
+  left: 35%;*/
+}
+
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+  fill-opacity: .9;
+}
+
+.x.axis path {
+  display: none;
+}
+
+label {
+  position: fixed;
+  top: 100px;
+  right: 500px;
+}
+
+</style>
+
+<h2> Frequency Distribution By Device </h2>
+
+<label><input type="checkbox"> Sort values</label>
+
+<svg width="960" height="500"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<%= javascript_include_tag('barchart.js') %>

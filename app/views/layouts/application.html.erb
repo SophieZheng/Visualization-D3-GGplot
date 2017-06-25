@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VisualPortfolio</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- Bootstrap core CSS -->
+    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+</head>
+<body>
+<div class="container">
+  <div class="header clearfix">
+    <nav>
+      <ul class="nav nav-pills pull-right">
+        <li role="presentation"><a href="/welcome/index"><h2>About </h2></a></li>
+        <li role="presentation"><a href="#"><h2>Contact</h2></a></li>
+      </ul>
+    </nav>
+    <h2 class="text-muted">Visualization Project</h2>
+  </div>
+
+    <div class="container">
+      <%= yield %>
+
+      <!-- FOOTER -->
+       <footer>
+        <!-- <p class="pull-right"><a href="#">Back to top</a></p> -->
+        <p>&copy; 2017 Baimin (Sophie) Zheng &middot; </p>
+      </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>

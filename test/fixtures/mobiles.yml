@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uid: 1
+  signup_dt: 2017-06-24 16:23:40
+  auth_type: MyString
+  device: 1
+  dt: 2017-06-24 16:23:40
+
+two:
+  uid: 1
+  signup_dt: 2017-06-24 16:23:40
+  auth_type: MyString
+  device: 1
+  dt: 2017-06-24 16:23:40
