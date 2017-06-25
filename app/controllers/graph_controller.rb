@@ -41,4 +41,12 @@ class GraphController < ApplicationController
 			}
 		end
 	end
+
+	def barchart
+		
+	end
+
+	def heatmap
+		
+	end
 end
